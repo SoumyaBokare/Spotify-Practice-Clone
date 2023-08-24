@@ -51,6 +51,7 @@ nav ul li{
    border-radius: 12px;
    padding: 34px;
    background-image: url('kanye.jpg');
+   object-fit: cover;
 }
 
 .bottom{
@@ -123,3 +124,49 @@ nav ul li{
       background-color: red;
     }
   }
+
+
+
+/* Existing CSS styles */
+
+/* New styles for mobile responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        background-color: antiquewhite;
+    }
+
+    /* Reset margin for song items */
+    .songItem {
+        margin: 5px 0;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Adjust song item image */
+    .songItem img {
+        width: 40px;
+        border-radius: 10px;
+        margin-right: 10px;
+    }
+
+    /* Adjust song names and timestamps */
+    .songName {
+        font-size: 0.9rem;
+    }
+
+    .timestamp {
+        font-size: 0.8rem;
+    }
+
+    .songInfo {
+        text-align: center;
+        font-size: 0.8rem;
+        margin: 5px 0;
+    }
+    .icons i {
+        font-size: 2rem;
+    }
+}
+
